@@ -1,0 +1,156 @@
+body
+{
+	/* Background pattern from https://www.toptal.com/ */
+	background-image: url("img/tlo.png");
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
+	line-height: 1.6;
+	color: #333;
+}
+
+a:link
+{
+	color: black;
+	text-decoration: none;	
+}
+
+a:visited
+{
+	color: black;
+	text-decoration: none;	
+}
+
+a:hover
+{
+	color: #485b3b;
+	text-decoration: underline;	
+}
+
+a:active
+{
+	color: black;
+	text-decoration: none;	
+}
+
+#logo
+{
+	width: 100%;
+	height: 60px;
+	background-color: #485b3b;
+	color: white;
+	font-size: 36px;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 10px 0;
+	letter-spacing: 3px;
+	border-bottom: 2px solid #33402a;
+	text-shadow:
+	2px 2px 0 #33402a, /* blur = promien rozmazania cienia rowny 0 */
+	-2px 2px 0 #33402a, 
+	-2px -2px 0 #33402a,
+	2px -2px 0 #33402a;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+#container
+{
+	margin: 0 auto;
+	background-color: white;
+	width: 878px;
+	padding: 20px;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+#spis
+{
+	width: 780px;
+	padding-left: 100px;
+}
+
+ol
+{
+	margin-top: 5px;
+	list-style-type: decimal;
+	
+}
+
+ol > li
+{
+	font-size: 22px;
+	text-transform: uppercase;
+	font-weight: 700;
+	padding:5px;
+	letter-spacing: 3px;
+}
+
+ol > li > ul
+{
+	font-size: 18px;
+	text-transform: none;
+	font-weight: 400;
+	padding: 0px;
+	letter-spacing: 0px;
+	margin-top: 5px;
+	margin-left: 30px;
+	list-style-type: none;
+}
+
+ol > li > ul > li 
+{
+	margin: 0px; /* to keep items close together */
+}
+
+ol > li > ul > li:before
+{
+	color: #485b3b;
+	content: "♦";
+	margin-right: 5px;
+
+}
+
+.slajd
+{
+	padding: 30px 40px;
+	text-align: justify;
+	margin-bottom: 20px;
+	background: #fff;
+	border-radius: 5px;
+	box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+h1
+{
+	font-size: 24px;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: #485b3b;
+	border-bottom: 2px solid #485b3b;
+	padding-bottom: 10px;
+	margin-bottom: 20px;
+}
+
+.scrollup
+{
+	width: 64px;
+	height: 64px;
+	text-decoration: none;
+	background: url("img/up.png") no-repeat 0px 0px; /* no-repeat means: Don't repeat background image, show only one, 0px 0px means: start filling from top-left corner */
+	position: fixed;
+	right: 50px;
+	bottom: 50px;
+	display: none;
+}
+
+#footer
+{
+	color: white;
+	background-color: #485b3b;
+	text-align: center;
+	padding: 20px;
+	width: 99%;
+	font-size: 14px;
+	box-shadow: 0 -2px 5px rgba(0,0,0,0.2);
+}
