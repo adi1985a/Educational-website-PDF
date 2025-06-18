@@ -45,16 +45,16 @@ Computer Monitors - Technical Overview is a modern, responsive HTML-based educat
 _Screenshots of: the website's main page with the table of contents, examples of the detailed sections on CRT/LCD monitors with images, the display connector guide, and the scroll-to-top button in action._
 
 <p align="center">
-  <img src="screenshots/1.gif" width="300" alt="Main page with hero section"/>
-  <img src="screenshots/2.jpg" width="300" alt="Table of contents and navigation"/>
-  <img src="screenshots/3.jpg" width="300" alt="CRT monitor section with diagrams"/>
-  <img src="screenshots/4.jpg" width="300" alt="LCD monitor section with images"/>
-  <img src="screenshots/5.jpg" width="300" alt="Display connector guide"/>
-  <img src="screenshots/6.jpg" width="300" alt="Dark mode toggle"/>
-  <img src="screenshots/7.jpg" width="300" alt="Scroll-to-top button"/>
-  <img src="screenshots/8.jpg" width="300" alt="Responsive mobile view"/>
-  <img src="screenshots/9.jpg" width="300" alt="Future technologies section"/>
-  <img src="screenshots/10.jpg" width="300" alt="Interactive elements and animations"/>
+  <img src="screenshots/1.gif" width="300" "/>
+  <img src="screenshots/2.jpg" width="300" "/>
+  <img src="screenshots/3.jpg" width="300" "/>
+  <img src="screenshots/4.jpg" width="300" "/>
+  <img src="screenshots/5.jpg" width="300" "/>
+  <img src="screenshots/6.jpg" width="300" "/>
+  <img src="screenshots/7.jpg" width="300" "/>
+  <img src="screenshots/8.jpg" width="300" "/>
+  <img src="screenshots/9.jpg" width="300" "/>
+  <img src="screenshots/10.jpg" width="300" "/>
 </p>
 
 ## 📋 Requirements
