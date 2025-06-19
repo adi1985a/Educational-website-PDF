@@ -24,6 +24,11 @@
 ## 📋 Overview
 Computer Monitors - Technical Overview is a modern, responsive HTML-based educational website detailing CRT and LCD monitor technologies, connectors (VGA, DVI, HDMI, DisplayPort), and future displays (PDP, OLED). It features a hero section, modern navigation with icons, dark mode toggle, smooth animations, and comprehensive content sections. Styled with modern CSS, Google Fonts (Montserrat, Roboto), and Font Awesome icons for enhanced user experience.
 
+<br><br>
+<p align="center">
+  <img src="screenshots/1.gif" width="85%">
+</p>
+
 ## ✨ Features
 - 🎯 **Hero Section**: Eye-catching header with background image and call-to-action button
 - 🧭 **Modern Navigation**: Sticky navigation bar with Font Awesome icons and dark mode toggle
@@ -55,6 +60,16 @@ _Screenshots of: the website's main page with the table of contents, examples of
   <img src="screenshots/8.jpg" width="300" "/>
   <img src="screenshots/9.jpg" width="300" "/>
   <img src="screenshots/10.jpg" width="300" "/>
+  <img src="screenshots/11.gif" width="300" "/>
+  <img src="screenshots/12.jpg" width="300" "/>
+  <img src="screenshots/13.jpg" width="300" "/>
+  <img src="screenshots/14.jpg" width="300" "/>
+  <img src="screenshots/15.jpg" width="300" "/>
+  <img src="screenshots/16.jpg" width="300" "/>
+  <img src="screenshots/17.jpg" width="300" "/>
+  <img src="screenshots/18.jpg" width="300" "/>
+  <img src="screenshots/19.jpg" width="300" "/>
+  <img src="screenshots/20.jpg" width="300" "/>
 </p>
 
 ## 📋 Requirements
@@ -163,7 +178,7 @@ Contributions are welcome! To contribute:
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ## 📧 Contact
-For questions or feedback, open an issue on GitHub or email 📧 impersoftware@gmail.com.
+Made by Adrian Lesniak. For questions or feedback, open an issue on GitHub or email 📧 impersoftware@gmail.com.
 
 ---
 
