@@ -50,7 +50,7 @@ Computer Monitors - Technical Overview is a modern, responsive HTML-based educat
 _Screenshots of: the website's main page with the table of contents, examples of the detailed sections on CRT/LCD monitors with images, the display connector guide, and the scroll-to-top button in action._
 
 <p align="center">
-  <img src="screenshots/1.gif" width="300" "/>
+  <img src="screenshots/1.jpg" width="300" "/>
   <img src="screenshots/2.jpg" width="300" "/>
   <img src="screenshots/3.jpg" width="300" "/>
   <img src="screenshots/4.jpg" width="300" "/>
