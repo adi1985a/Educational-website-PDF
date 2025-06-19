@@ -2,22 +2,21 @@
 <html lang="en">
 
 <head>
-
 	<meta charset="UTF-8" />
 	<title>Computer Monitors - Technical Overview</title>
 	<meta name="description" content="Learn everything you need to know about computer monitors in IT education. Comprehensive guide about CRT and LCD technologies."/>
 	<meta name="keywords" content="monitor construction, operating principles, CRT, LCD, connectors, advantages, disadvantages, monitor parameters, markings, masks, matrix types: TN, PVA, MVA, IPS, diagonal size, resolution, dot pitch, pixel size, brightness, contrast, dead pixel, PDP, OLED, VGA, DSUB, HDMI, DVI, monitor buying guide, CRT vs LCD comparison" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	
 	<link rel="stylesheet" href="style.css" type="text/css" />
-	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-	
 	<script src="jquery.scrollTo.min.js"></script>
 	
 	<script>
-	
 	jQuery(function($)
 	{
 		//reset scroll
@@ -104,617 +103,679 @@
 		});
 	});
 	
-	
 	//show during scrolling
 	$(window).scroll(function()
 	{
-		if($(this).scrollTop()>300) $('.scrollup').fadeIn(); //scrollTop means from the top of the screen is greater than 300 pixels then grab the scrollup button and make it appear on the screen, but in an animated way
+		if($(this).scrollTop()>300) $('.scrollup').fadeIn();
 		else $('.scrollup').fadeOut();
-	}	
-	
-	);
-	
-	
+	});
 	</script>
-
 </head>
 
 <body>
 
+<header class="hero">
+	<div class="hero-bg"></div>
+	<div class="hero-content">
+		<i class="fa-solid fa-desktop fa-3x"></i>
+		<h1>Lecture #1: Computer Monitors</h1>
+		<p>Comprehensive guide to CRT, LCD, and display technologies</p>
+		<a href="#container" class="btn-main"><i class="fa-solid fa-arrow-down"></i> Explore</a>
+	</div>
+</header>
 
-<div id="logo">Lecture #1: Computer Monitors</div>
+<nav id="main-nav">
+	<ul>
+		<li><a href="#spis"><i class="fa-solid fa-list"></i> Contents</a></li>
+		<li><a href="#crt-section"><i class="fa-solid fa-tv"></i> CRT</a></li>
+		<li><a href="#lcd-section"><i class="fa-solid fa-tablet-screen-button"></i> LCD</a></li>
+		<li><a href="#connectors-section"><i class="fa-solid fa-plug"></i> Connectors</a></li>
+		<li><a href="#future-section"><i class="fa-solid fa-lightbulb"></i> Future</a></li>
+	</ul>
+	<button id="dark-toggle" title="Toggle dark mode"><i class="fa-solid fa-moon"></i></button>
+</nav>
+
+<button class="back-to-top" title="Back to top" id="backToTop">
+	<i class="fa-solid fa-arrow-up"></i>
+</button>
 
 <div id="container">
-
-	<a href="#" class="scrollup"></a> <!-- jQuery controls this link -->
+	<a href="#" class="scrollup"></a>
 
 	<div id="spis">
-	
 		<ol>
-			
 			<li>
 				CRT Monitors
-			
 				<ul>
-					<li><a id="link1" href="#">Construction</a></li>
-					<li><a id="link2" href="#">Operating Principles</a></li>
-					<li><a id="link3" href="#">Mask Types</a></li>
-					<li><a id="link4" href="#">Pros and Cons</a></li>
-					<li><a id="link5" href="#">Parameters</a></li>
+					<li><a id="link1" href="#"><i class="fa-solid fa-cog"></i> Construction</a></li>
+					<li><a id="link2" href="#"><i class="fa-solid fa-play"></i> Operating Principles</a></li>
+					<li><a id="link3" href="#"><i class="fa-solid fa-mask"></i> Mask Types</a></li>
+					<li><a id="link4" href="#"><i class="fa-solid fa-balance-scale"></i> Pros and Cons</a></li>
+					<li><a id="link5" href="#"><i class="fa-solid fa-sliders"></i> Parameters</a></li>
 				</ul>
 			</li>
-				
 			<li>
 				LCD Monitors
 				<ul>
-					<li><a id="link6" href="#">Construction</a></li>
-					<li><a id="link7" href="#">Operating Principles</a></li>
-					<li><a id="link8" href="#">Matrix Types</a></li>
-					<li><a id="link9" href="#">Pros and Cons</a></li>
-					<li><a id="link10" href="#">Parameters</a></li>
+					<li><a id="link6" href="#"><i class="fa-solid fa-cog"></i> Construction</a></li>
+					<li><a id="link7" href="#"><i class="fa-solid fa-play"></i> Operating Principles</a></li>
+					<li><a id="link8" href="#"><i class="fa-solid fa-th"></i> Matrix Types</a></li>
+					<li><a id="link9" href="#"><i class="fa-solid fa-balance-scale"></i> Pros and Cons</a></li>
+					<li><a id="link10" href="#"><i class="fa-solid fa-sliders"></i> Parameters</a></li>
 				</ul>
 			</li>
-				
 			<li>
 				Monitor Connections
 				<ul>
-					<li><a id="link11" href="#">DSUB</a></li>
-					<li><a id="link12" href="#">DVI</a></li>
-					<li><a id="link13" href="#">HDMI & DisplayPort</a></li>
+					<li><a id="link11" href="#"><i class="fa-solid fa-v"></i> DSUB</a></li>
+					<li><a id="link12" href="#"><i class="fa-solid fa-d"></i> DVI</a></li>
+					<li><a id="link13" href="#"><i class="fa-brands fa-hdmi"></i> HDMI & DisplayPort</a></li>
 				</ul>
 			</li>
-					
 			<li>
 				Additional Information
 				<ul>
-					<li><a id="link14" href="#">Future Technologies</a></li>
-					<li><a id="link15" href="#">References</a></li>
+					<li><a id="link14" href="#"><i class="fa-solid fa-rocket"></i> Future Technologies</a></li>
+					<li><a id="link15" href="#"><i class="fa-solid fa-book"></i> References</a></li>
 				</ul>			
 			</li>		
 		</ol>
-	
 	</div>
 
-
-
-		<!-- ######################## SLAJD 1.1 ######################## -->
+	<!-- ######################## SLIDE 1.1 ######################## -->
+	<div class="slajd fadein" id="crt-section">
+		<h1 id="BudowaCRT"><i class="fa-solid fa-tv"></i> CRT Monitor Construction</h1>
 		
-		<div class="slajd">
+		CRT stands for <strong>Cathode-Ray Tube</strong>, a vacuum tube containing one or more electron guns and a phosphorescent screen used to display images. In Polish, the term CRT is commonly used to refer to monitors with a cathode-ray tube display. The proper term is a cathode-ray tube monitor.
+		<br /><br />
 		
-			<h1 id="BudowaCRT">Monitor Construction</h1>
-			
-			CRT stands for <strong>Cathode-Ray Tube</strong>, a vacuum tube containing one or more electron guns and a phosphorescent screen used to display images. In Polish, the term CRT is commonly used to refer to monitors with a cathode-ray tube display. The proper term is a cathode-ray tube monitor.
-			<br /><br />
-			
-			<div style="float:left; width:480px; padding-left:20px;">
-				<img src="img/budowa-crt.png" alt="crt" />
+		<div class="image-container">
+			<div class="image-wrapper">
+				<img src="img/budowa-crt.png" alt="CRT Construction" class="tech-image" />
 			</div>
-			<div style="float:left; width:280px; text-align:left;">
-				[1] Cathode-ray tube<br /><br />
-				[2] Electron guns with focusing systems<br /><br />
-				[3] Electron beams<br /><br />
-				[4] Deflection coil<br /><br />
-				[5] Phosphor<br /><br />
-				[6] Mask<br /><br />
-				[7] Anode
+			<div class="image-description">
+				<div class="description-item"><span class="number">[1]</span> Cathode-ray tube</div>
+				<div class="description-item"><span class="number">[2]</span> Electron guns with focusing systems</div>
+				<div class="description-item"><span class="number">[3]</span> Electron beams</div>
+				<div class="description-item"><span class="number">[4]</span> Deflection coil</div>
+				<div class="description-item"><span class="number">[5]</span> Phosphor</div>
+				<div class="description-item"><span class="number">[6]</span> Mask</div>
+				<div class="description-item"><span class="number">[7]</span> Anode</div>
 			</div>
-			<div style="clear:both;"></div>
-
+		</div>
+	</div>
+	
+	<!-- ######################## SLIDE 1.2 ######################## -->
+	<div class="slajd fadein">
+		<h1 id="DzialanieCRT"><i class="fa-solid fa-play"></i> Operating Principles</h1>
+		
+		The principle of creating an image in a color CRT monitor involves sending three electron beams (one for each RGB color component) towards the front screen coated with a layer of phosphor. These beams are directed by a strong magnetic field (deflection coils) to hit the appropriate area on the phosphor.
+		<br /><br />
+		<strong>Phosphor is a luminescent pigment</strong>, a material that glows when exposed to radiation. The beams sweep the screen along a single horizontal line, called the scan line, from left to right, illuminating the phosphor points and causing them to glow brighter or dimmer, depending on the voltage controlling the electron gun.
+		<br /><br />
+		
+		<div class="info-box">
+			<div class="info-header">Horizontal Frequency</div>
+			<div class="info-content">The frequency at which the monitor draws a single line of the image, measured in kilohertz [kHz]</div>
 		</div>
 		
-		<!-- ######################## SLAJD 1.2 ######################## -->
+		<br />			
+		After drawing a line and reaching the right edge of the screen, the beams are temporarily turned off, then the deflection coils direct them to the beginning of the next line down the screen, and the process starts again until the entire screen is filled line by line. When the entire screen is filled, the beams are turned off again, and the whole cycle of drawing the image starts from the top of the screen (from the first line).
+		<br /><br />
 		
-		<div class="slajd">
+		<div class="info-box">
+			<div class="info-header">Refresh Rate (Vertical)</div>
+			<div class="info-content">The frequency at which the monitor draws the entire screen (all lines of the image) - measured in hertz [Hz]. To avoid screen flicker and eye strain, the image should be drawn 85 times per second (refresh rate of 85 Hz)</div>
+		</div>
+	</div>
+	
+	<!-- ######################## SLIDE 1.3 ######################## -->
+	<div class="slajd fadein">
+		<h1 id="MaskiCRT"><i class="fa-solid fa-mask"></i> Mask Types in CRT Monitors</h1>
 		
-			<h1 id="DzialanieCRT">Operating Principles</h1>
-			
-			The principle of creating an image in a color CRT monitor involves sending three electron beams (one for each RGB color component) towards the front screen coated with a layer of phosphor. These beams are directed by a strong magnetic field (deflection coils) to hit the appropriate area on the phosphor.
-			<br /><br />
-			<strong>Phosphor is a luminescent pigment</strong>, a material that glows when exposed to radiation. The beams sweep the screen along a single horizontal line, called the scan line, from left to right, illuminating the phosphor points and causing them to glow brighter or dimmer, depending on the voltage controlling the electron gun.
-			<br /><br />
-			
-			<div style="width:790px; background-color:#314004;padding:5px;font-weight:700;color:#fff;">
-				Horizontal Frequency
+		In front of the phosphor layer is the so-called <strong>mask</strong> (shadow mask), which acts as a filter ensuring that electrons hit the designated phosphor areas (subpixels) perfectly, positively affecting image quality.
+		<br /><br />
+		
+		<div class="mask-types">
+			<div class="mask-item">
+				<img src="img/maska1.png" alt="Perforated Mask" class="mask-image" />
+				<div class="mask-label">Perforated (IBM Delta)</div>
 			</div>
-			<div style="width:790px; background-color:#dedede; padding:5px;">
-				The frequency at which the monitor draws a single line of the image, measured in kilohertz [kHz]
-			</div>	
-			
-			<br />			
-			After drawing a line and reaching the right edge of the screen, the beams are temporarily turned off, then the deflection coils direct them to the beginning of the next line down the screen, and the process starts again until the entire screen is filled line by line. When the entire screen is filled, the beams are turned off again, and the whole cycle of drawing the image starts from the top of the screen (from the first line).
-			<br /><br />
-			
-			<div style="width:790px; background-color:#314004;padding:5px;font-weight:700;color:#fff;">
-				Refresh Rate (Vertical)
+			<div class="mask-item">
+				<img src="img/maska2.png" alt="Slot Mask" class="mask-image" />
+				<div class="mask-label">Slot (Trinitron, Diamondtron)</div>
 			</div>
-			<div style="width:790px; background-color:#dedede;padding:5px;">
-				The frequency at which the monitor draws the entire screen (all lines of the image) - measured in hertz [Hz]. To avoid screen flicker and eye strain, the image should be drawn 85 times per second (refresh rate of 85 Hz)
+			<div class="mask-item">
+				<img src="img/maska3.png" alt="Slot-Perforated Mask" class="mask-image" />
+				<div class="mask-label">Slot-Perforated (NEC Cromaclear)</div>
 			</div>
-			
 		</div>
 		
-		<!-- ######################## SLAJD 1.3 ######################## -->
+		<br />
 		
-		<div class="slajd">
-		
-			<h1 id="MaskiCRT">Mask Types in CRT Monitors</h1>
-			
-			In front of the phosphor layer is the so-called <strong>mask</strong> (shadow mask), which acts as a filter ensuring that electrons hit the designated phosphor areas (subpixels) perfectly, positively affecting image quality.
-			<br /><br />
-			
-			<div style="width:265px; float:left; text-align:center; font-size:14px;">
-				<img src="img/maska1.png" alt="maska1" />
-				<br />Perforated (IBM Delta)
-			</div>
-			<div style="width:260px; float:left; text-align:center; font-size:14px;">
-				<img src="img/maska2.png" alt="maska2" />
-				<br />Slot (Trinitron, Diamondtron)
-			</div>
-			<div style="width:265px; float:left; text-align:center; font-size:14px;">
-				<img src="img/maska3.png" alt="maska3" />
-				<br />Slot-Perforated (NEC Cromaclear)
-			</div>
-			<div style="clear:both;"></div>
-			
-			<br />
-			
-			<div style="width:790px; background-color:#314004;padding:5px;font-weight:700;color:#fff;">
-				Perforated Mask
-			</div>
-			<div style="width:790px; background-color:#dedede; padding:5px;">
-				Used in the first CRT monitors, developed by IBM. Its biggest drawback is its large surface area, which reduces image brightness
-			</div>	
-			
-			<br />
-			
-			<div style="width:790px; background-color:#314004;padding:5px;font-weight:700;color:#fff;">
-				Slot Mask
-			</div>
-			<div style="width:790px; background-color:#dedede; padding:5px;">
-				First used in NEC Cromaclear CRTs. It is a compromise between the two previous solutions - at the cost of slight image quality loss, the two stabilizing wires were eliminated. The production cost of this mask is also much lower
-			</div>	
-			
-			<br />
-			
-			<div style="width:790px; background-color:#314004;padding:5px;font-weight:700;color:#fff;">
-				Slot-Perforated Mask
-			</div>
-			<div style="width:790px; background-color:#dedede; padding:5px;">
-				The frequency at which the monitor draws a single line of the image, measured in kilohertz [kHz]
-			</div>	
-			
-		</div>
-			
-		<!-- ######################## SLAJD 1.4 ######################## -->
-		
-		<div class="slajd">
-		
-			<h1 id="WadyZaletyCRT">Pros and Cons of CRT Monitors</h1>
-			
-			The choice of monitor type depends mainly on its intended use. CRT monitors have been almost entirely replaced by LCD monitors, but some unique properties still make them popular among photographers, for example.
-			<br /><br />
-			
-			<div style="width:790px; background-color:#314004;padding:5px;font-weight:700;color:#fff;">
-				Advantages of CRT Monitors
-			</div>
-			<div style="width:790px; background-color:#dedede; padding:5px;">
-				Fast response time, multi-frequency (ability to change resolution), accurate color reproduction, wide viewing angles.
-			</div>
-			
-			<br />
-			
-			<div style="width:790px; background-color:#912525;padding:5px;font-weight:700;color:#fff;">
-				Disadvantages of CRT Monitors
-			</div>
-			<div style="width:790px; background-color:#dedede; padding:5px;">
-				Average brightness and contrast, large size and weight (making adjustment more difficult), high power consumption, always present screen curvature, refresh rate significantly affects image quality and eye strain, higher electromagnetic radiation emission.
-			</div>
-
+		<div class="info-box">
+			<div class="info-header">Perforated Mask</div>
+			<div class="info-content">Used in the first CRT monitors, developed by IBM. Its biggest drawback is its large surface area, which reduces image brightness</div>
 		</div>
 		
-		<!-- ######################## SLAJD 1.5 ######################## -->
+		<br />
 		
-		<div class="slajd">
-		
-			<h1 id="ParametryCRT">Parameter Selection for CRT Monitors</h1>
-			
-			In CRT monitors, the actual working screen area is slightly smaller than the manufacturer claims due to the <strong>screen curvature</strong> that always occurs in a cathode-ray tube monitor. Even in the latest models with almost flat screens (FST - Flat Square Tube), there are slight horizontal curvatures.
-			<br /><br />
-			
-			<div style="width:790px; background-color:#314004;padding:5px;font-weight:700;color:#fff;">
-				Useful Screen Size
-			</div>
-			<div style="width:790px; background-color:#dedede; padding:5px;">
-				The diagonal size of the monitor screen (expressed in inches)
-			</div>
-			
-			<br />			
-			Currently, standard resolutions in CRT monitors are, for example, 1024×768 (XVGA), 1280×1024 (SXGA), and 1600×1200 (UXGA). Due to the ability to display multiple resolutions (multi-frequency), it is only important that the monitor provides an appropriate vertical refresh rate for high resolution.
-			<br /><br />
-			
-			<div style="width:790px; background-color:#314004;padding:5px;font-weight:700;color:#fff;">
-				Resolution
-			</div>
-			<div style="width:790px; background-color:#dedede; padding:5px;">
-				A parameter that defines the number of pixels in the image displayed on the screen in the current operating mode of the computer monitor; resolution is expressed as the number of image pixels horizontally and vertically
-			</div>
-			
-			<br />
-			In a CRT monitor, the physical pixel on the screen surface does not directly correspond to the "computer" pixel understood as the smallest element of the image processed by the graphics card. Most often, when working with a CRT monitor, a single computer image pixel generated by the graphics card corresponds to several physical pixels of the mask.
-			<br /><br />
-			Therefore, to semantically distinguish the concept of a computer image pixel from a real CRT pixel, the term dot pitch was introduced. The smaller the dot pitch, the more densely packed the elements are, resulting in better image sharpness. Common dot pitch sizes: 0.2mm; 0.24mm; 0.25mm; 0.28mm.
-			<br /><br />
-			
-			<div style="width:790px; background-color:#314004;padding:5px;font-weight:700;color:#fff;">
-				Dot Pitch in CRT Monitors
-			</div>
-			<div style="width:790px; background-color:#dedede; padding:5px;">
-				The distance in [mm] between two pixels (triads) in a given CRT.
-			</div>		
-			
-			<br />
-			In CRT monitors, horizontal and vertical refresh rates are distinguished. The vertical refresh rate indicates how many times per second the entire screen is drawn. The horizontal refresh rate specifies how many times per second the electron beam can draw a horizontal line. The horizontal frequency has a very high value (expressed in kilohertz), so from a practical point of view, it has little significance.
-			
-			<br /><br />Therefore, when talking about the refresh rate, we always mean the vertical frequency. A refresh rate below 80Hz will quickly tire the eyes (visible screen flicker), and it should ideally be 85-100Hz at a given resolution.
-			<br /><br />
-			
-			<div style="width:790px; background-color:#314004;padding:5px;font-weight:700;color:#fff;">
-				Refresh Rate in CRT Monitors
-			</div>
-			<div style="width:790px; background-color:#dedede; padding:5px;">
-				Specifies how many times per second the entire image (all lines) is displayed on the monitor screen; expressed in hertz [Hz].
-			</div>					
-
+		<div class="info-box">
+			<div class="info-header">Slot Mask</div>
+			<div class="info-content">First used in NEC Cromaclear CRTs. It is a compromise between the two previous solutions - at the cost of slight image quality loss, the two stabilizing wires were eliminated. The production cost of this mask is also much lower</div>
 		</div>
 		
-		<!-- ######################## SLAJD 2.1 ######################## -->
+		<br />
 		
-		<div class="slajd">
+		<div class="info-box">
+			<div class="info-header">Slot-Perforated Mask</div>
+			<div class="info-content">The frequency at which the monitor draws a single line of the image, measured in kilohertz [kHz]</div>
+		</div>
+	</div>
 		
-			<h1 id="BudowaLCD">Monitor Construction</h1>
-			
-			LCD stands for Liquid Crystal Display - a device whose operating principle is based on changing the polarization of light due to changes in the orientation of liquid crystal molecules under the influence of an electric field.
-			<br /><br />
-			
-			<div style="float:left; width:500px; text-align: center;">
-				<img src="img/budowa-lcd.png" alt="lcd" />
+	<!-- ######################## SLIDE 1.4 ######################## -->
+	<div class="slajd fadein">
+		<h1 id="WadyZaletyCRT"><i class="fa-solid fa-balance-scale"></i> Pros and Cons of CRT Monitors</h1>
+		
+		The choice of monitor type depends mainly on its intended use. CRT monitors have been almost entirely replaced by LCD monitors, but some unique properties still make them popular among photographers, for example.
+		<br /><br />
+		
+		<div class="pros-cons">
+			<div class="pros">
+				<div class="pros-header">Advantages of CRT Monitors</div>
+				<div class="pros-content">Fast response time, multi-frequency (ability to change resolution), accurate color reproduction, wide viewing angles.</div>
 			</div>
-			<div style="float:left; width:280px; text-align:left; padding-top:30px;">
-				[1] Polarizing filter<br /><br />
-				[2] Glass substrate<br /><br />
-				[3] Transparent electrodes<br /><br />
-				[4] Alignment layer<br /><br />
-				[5] Liquid crystals<br /><br />
-				[6] Color filters
+			
+			<div class="cons">
+				<div class="cons-header">Disadvantages of CRT Monitors</div>
+				<div class="cons-content">Average brightness and contrast, large size and weight (making adjustment more difficult), high power consumption, always present screen curvature, refresh rate significantly affects image quality and eye strain, higher electromagnetic radiation emission.</div>
 			</div>
-			<div style="clear:both;"></div>
-
+		</div>
+	</div>
+	
+	<!-- ######################## SLIDE 1.5 ######################## -->
+	<div class="slajd fadein">
+		<h1 id="ParametryCRT"><i class="fa-solid fa-sliders"></i> Parameter Selection for CRT Monitors</h1>
+		
+		In CRT monitors, the actual working screen area is slightly smaller than the manufacturer claims due to the <strong>screen curvature</strong> that always occurs in a cathode-ray tube monitor. Even in the latest models with almost flat screens (FST - Flat Square Tube), there are slight horizontal curvatures.
+		<br /><br />
+		
+		<div class="info-box">
+			<div class="info-header">Useful Screen Size</div>
+			<div class="info-content">The diagonal size of the monitor screen (expressed in inches)</div>
 		</div>
 		
-		<!-- ######################## SLAJD 2.2 ######################## -->
+		<br />			
+		Currently, standard resolutions in CRT monitors are, for example, 1024×768 (XVGA), 1280×1024 (SXGA), and 1600×1200 (UXGA). Due to the ability to display multiple resolutions (multi-frequency), it is only important that the monitor provides an appropriate vertical refresh rate for high resolution.
+		<br /><br />
 		
-		<div class="slajd">
-		
-			<h1 id="DzialanieLCD">Operating Principles</h1>
-			
-			The principle of creating an image in a color LCD monitor is somewhat different from CRT monitors. The electron gun was eliminated, resulting in a much smaller and lighter monitor. The light source is usually <strong>thin fluorescent lamps</strong> (or <strong>LEDs</strong> in much more expensive LED monitors). The light passes through a <strong>polarizing filter</strong> that allows light waves of a specific phase to pass through. The light beam then hits a filter with horizontal slits, passes through a polysilicon layer called liquid crystals, and hits a second filter with vertical slits.
-			<br /><br />
-			If the light beam is not bent by 90° by the liquid crystal layer, the light will be completely blocked by the second filter. However, if the light beam is bent by 90° by the liquid crystal molecules, the light will be transmitted to the screen. <strong>Liquid crystal molecules are controlled by transistors</strong> - applying voltage causes the particles to orient and bend the light beam by 90° (excitation). Each pixel in an LCD monitor consists of three (called a <strong>triad</strong>) subpixels corresponding to RGB colors. Each subpixel is controlled independently by a separate transistor.
-			<br /><br />
-			
-			<div style="width:790px; background-color:#314004;padding:5px;font-weight:700;color:#fff;">
-				Dead Pixel
-			</div>
-			<div style="width:790px; background-color:#dedede; padding:5px;">
-				A subpixel that does not change its color or does not excite - e.g., due to a transistor failure - no light beam bending
-			</div>	
-
+		<div class="info-box">
+			<div class="info-header">Resolution</div>
+			<div class="info-content">A parameter that defines the number of pixels in the image displayed on the screen in the current operating mode of the computer monitor; resolution is expressed as the number of image pixels horizontally and vertically</div>
 		</div>
 		
-		<!-- ######################## SLAJD 2.3 ######################## -->
+		<br />
+		In a CRT monitor, the physical pixel on the screen surface does not directly correspond to the "computer" pixel understood as the smallest element of the image processed by the graphics card. Most often, when working with a CRT monitor, a single computer image pixel generated by the graphics card corresponds to several physical pixels of the mask.
+		<br /><br />
+		Therefore, to semantically distinguish the concept of a computer image pixel from a real CRT pixel, the term dot pitch was introduced. The smaller the dot pitch, the more densely packed the elements are, resulting in better image sharpness. Common dot pitch sizes: 0.2mm; 0.24mm; 0.25mm; 0.28mm.
+		<br /><br />
 		
-		<div class="slajd">
-		
-			<h1 id="MaskiLCD">Matrix Types in LCD Monitors</h1>
-			
-			<strong>Passive matrices</strong> were used in the early days of LCD technology - single transistors controlled entire rows and columns of pixels. Monitors based on passive matrices had slow response times, resulting in smearing and ghosting.
-			<br /><br />
-			In <strong>active matrices</strong>, each subpixel is controlled by a separate thin-film transistor (TFT).
-			<br /><br />
-			
-			<div style="width:100%; text-align: center; text-transform:uppercase;">
-				<strong>Twisted Nematic Matrices</strong>
-			</div>
-			<br />
-			
-			<div style="float:left; width:470px; text-align: center;">
-				<img src="img/mat1.png" alt="tn" />
-			</div>
-			<div style="float:left; width:330px; text-align:left;">
-				Applying voltage causes the liquid crystal molecules to rotate to a position perpendicular to the electrode planes on the opposite sides of the screen, blocking the light.
-				<br /><br />
-				They have a short response time (below 8ms), but small viewing angles and poor color reproduction.
-			</div>
-			<div style="clear:both;"></div>
-			
-			<br />
-			
-			<div style="width:100%; text-align: center; text-transform:uppercase;">
-				<strong>Multidomain / Patterned Vertical Alignment</strong>
-			</div>
-			<br />
-			
-			<div style="float:left; width:385px; text-align: center;">
-				<img src="img/mat2.png" alt="mvapva" />
-			</div>
-			<div style="float:left; width:415px; text-align:left;">
-				MVA: Skewed (twisted) alignment of liquid crystal molecules was used, thanks to the use of polyamide solutions. Twisting allows for an identical image from wide viewing angles over 170°).<br /><br />
-				PVA: Technology developed by Samsung as an alternative to MVA (different manufacturing process and parameter values).
-			</div>
-			<div style="clear:both;"></div>
-
-			<br />
-			
-			<div style="width:100%; text-align: center; text-transform:uppercase;">
-				<strong>(Super) In-Plane Switching</strong>
-			</div>
-			<br />
-			
-			<div style="float:left; width:385px; text-align: center;">
-				<img src="img/mat3.png" alt="ips" />
-			</div>
-			<div style="float:left; width:415px; text-align:left;">
-				In this matrix, the electrodes are placed only on the rear wall, and the liquid crystal molecules are not twisted. When voltage is applied, the light is guided along the shorter edges of the molecules, and the image is visible even at wide angles. In Super I-PS technology, broken electrodes arranged in zigzags were introduced, further reducing color distortions for large viewing angles.
-			</div>
-			<div style="clear:both;"></div>
-			
-		</div>
-		
-		<!-- ######################## SLAJD 2.4 ######################## -->
-		
-		<div class="slajd">
-		
-			<h1 id="WadyZaletyLCD">Pros and Cons of LCD Monitors</h1>
-			
-			The choice of monitor type depends mainly on its intended use. LCD monitors have almost entirely replaced CRT monitors, but this does not mean they are free of all flaws.
-			<br /><br />
-			
-			<div style="width:790px; background-color:#314004;padding:5px;font-weight:700;color:#fff;">
-				Advantages of LCD Monitors
-			</div>
-			<div style="width:790px; background-color:#dedede; padding:5px;">
-				Very good brightness/contrast, excellent image geometry, low power consumption, small size and weight (making adjustment easier), perfectly flat monitor, much lower electromagnetic radiation emission than CRT, refresh rate has little impact on image quality.
-			</div>
-			
-			<br />
-			
-			<div style="width:790px; background-color:#912525;padding:5px;font-weight:700;color:#fff;">
-				Disadvantages of LCD Monitors
-			</div>
-			<div style="width:790px; background-color:#dedede; padding:5px;">
-				Optimal image only at native resolution, average response time, worse color reproduction than CRT, image quality depends on viewing angle.
-			</div>
-
-		</div>
-		
-		<!-- ######################## SLAJD 2.5 ######################## -->
-		
-		<div class="slajd">
-		
-			<h1 id="ParametryLCD">Parameter Selection for LCD Monitors</h1>
-			
-			In LCD monitors, the diagonal screen size is exactly as the manufacturer claims, as liquid crystal panels have perfectly flat screens.
-			<br /><br />
-			
-			<div style="width:790px; background-color:#314004;padding:5px;font-weight:700;color:#fff;">
-				Useful Screen Size
-			</div>
-			<div style="width:790px; background-color:#dedede; padding:5px;">
-				The diagonal size of the monitor screen (expressed in inches)
-			</div>
-			
-			<br />			
-			LCD monitors have a native resolution - they display the optimal image only at one resolution, and other modes are achieved through mathematical scaling, which significantly degrades image quality.
-			<br /><br />
-			
-			<div style="width:790px; background-color:#314004;padding:5px;font-weight:700;color:#fff;">
-				Resolution
-			</div>
-			<div style="width:790px; background-color:#dedede; padding:5px;">
-				A parameter that defines the number of pixels in the image displayed on the screen in the current operating mode of the computer monitor; resolution is expressed as the number of image pixels horizontally and vertically
-			</div>
-			
-			<br />
-			Pixel size directly depends on the size of the LCD screen and its native resolution. To calculate the pixel size, measure (or refer to the specifications) the width of the screen's working area and divide it by the horizontal resolution - e.g., a 19-inch monitor typically has a width of 376 mm, and its typical native horizontal resolution is 1280px. So: 376/1280 = 0.294 mm. Differences in pixel size for desktop LCD panels can reach up to 16.5%, but when considering notebook matrices, the differences can reach up to 36%, which is significant.
-			<br /><br />
-			Consider a 17-inch LCD panel with a resolution of 1280x1024 and a monitor one step larger (i.e., 19 inches) with the same native resolution. The larger monitor will naturally have a much larger pixel.
-			<br /><br />
-			
-			<div style="width:790px; background-color:#314004;padding:5px;font-weight:700;color:#fff;">
-				Pixel Size in LCD Monitors
-			</div>
-			<div style="width:790px; background-color:#dedede; padding:5px;">
-				The distance in [mm] between two pixels in a given LCD matrix.
-			</div>		
-			
-			<br />
-			The brightness of the panel significantly affects the variety of displayed colors and the ability to present image details. An example value: 250 cd/m² (for comparison, the typical brightness of a CRT monitor is about 100-120 cd/m²). Of course, this is the maximum brightness; for example, during office work, too much brightness can quickly tire the eyes.
-			<br /><br />
-			Some monitors have switchable modes that change brightness (and other parameters, such as color balance) so that the displayed content looks its best - for movies or games, a high-brightness profile is created, while for office work, a reduced brightness profile is used.
-			<br /><br />
-			
-			<div style="width:790px; background-color:#314004;padding:5px;font-weight:700;color:#fff;">
-				Image Brightness in LCD Monitors
-			</div>
-			<div style="width:790px; background-color:#dedede; padding:5px;">
-				The maximum brightness achievable in an LCD matrix, measured in cd/m² (number of candelas per square meter).
-			</div>		
-
-			<br />
-			Let's talk about image contrast. An example value: 1000:1. Theoretically, the higher the contrast ratio, the better the panel's ability to present individual colors. It is worth noting that LCD panels have significant problems displaying black, which can sometimes appear more dark green than black. LCD monitor manufacturers often specify the so-called dynamic contrast in the device's specifications, which can reach up to 1000000:1, unlike the much lower static contrast. However, this is purely a marketing ploy.
-			<br /><br />
-			
-			<div style="width:790px; background-color:#314004;padding:5px;font-weight:700;color:#fff;">
-				Image Contrast in LCD Monitors
-			</div>
-			<div style="width:790px; background-color:#dedede; padding:5px;">
-				Defines the difference between the brightness of the brightest shade of white and the darkest shade of black achievable on the display.
-			</div>		
-			
-			<br />
-			The trick with dynamic contrast involves adjusting the brightness of the fluorescent lamps providing light depending on the image brightness. The difference in lamp brightness causes an artificial increase in the difference between the brightness of white and black colors. For displaying static images (e.g., slide presentations), dynamic contrast is not very suitable, as noticeable changes in background brightness will occur when changing slides. However, when displaying movies, changes in lamp brightness will not be as visible, and the film will appear more contrasty, although it will still look worse than on a device with higher static contrast. A monitor or TV with dynamic contrast enabled is not suitable for computer work, especially for document or graphics editing.
-
+		<div class="info-box">
+			<div class="info-header">Dot Pitch in CRT Monitors</div>
+			<div class="info-content">The distance in [mm] between two pixels (triads) in a given CRT.</div>
 		</div>		
 		
-		<!-- ######################## SLAJD 3.1 ######################## -->
+		<br />
+		In CRT monitors, horizontal and vertical refresh rates are distinguished. The vertical refresh rate indicates how many times per second the entire screen is drawn. The horizontal refresh rate specifies how many times per second the electron beam can draw a horizontal line. The horizontal frequency has a very high value (expressed in kilohertz), so from a practical point of view, it has little significance.
 		
-		<div class="slajd">
+		<br /><br />Therefore, when talking about the refresh rate, we always mean the vertical frequency. A refresh rate below 80Hz will quickly tire the eyes (visible screen flicker), and it should ideally be 85-100Hz at a given resolution.
+		<br /><br />
 		
-			<h1 id="DSUB">Analog Connector DSUB (VGA)</h1>
-			
-			A popular connector during the CRT monitor era - undesirable in an LCD monitor, as it involves double signal conversion: converting the digital signal to analog in the graphics card and converting the analog signal to digital in the monitor. Double conversion causes image quality loss and increases susceptibility to interference. The name DSUB comes from the type of connectors resembling the shape of a lying letter D. Another name is VGA (from the graphics mode).
-			<br /><br />
-			
-			<div style="float:left; width:450px; text-align: center; padding-top:20px;">
-				<img src="img/zlacze1.png" alt="dsub" />
+		<div class="info-box">
+			<div class="info-header">Refresh Rate in CRT Monitors</div>
+			<div class="info-content">Specifies how many times per second the entire image (all lines) is displayed on the monitor screen; expressed in hertz [Hz].</div>
+		</div>					
+	</div>
+	
+	<!-- ######################## SLIDE 2.1 ######################## -->
+	<div class="slajd fadein" id="lcd-section">
+		<h1 id="BudowaLCD"><i class="fa-solid fa-tablet-screen-button"></i> LCD Monitor Construction</h1>
+		
+		LCD stands for Liquid Crystal Display - a device whose operating principle is based on changing the polarization of light due to changes in the orientation of liquid crystal molecules under the influence of an electric field.
+		<br /><br />
+		
+		<div class="image-container">
+			<div class="image-wrapper">
+				<img src="img/budowa-lcd.png" alt="LCD Construction" class="tech-image" />
 			</div>
-			<div style="float:left; width:330px; text-align:left;">
-				<img src="img/zlacze1a.png" alt="dsub2" />
+			<div class="image-description">
+				<div class="description-item"><span class="number">[1]</span> Polarizing filter</div>
+				<div class="description-item"><span class="number">[2]</span> Glass substrate</div>
+				<div class="description-item"><span class="number">[3]</span> Transparent electrodes</div>
+				<div class="description-item"><span class="number">[4]</span> Alignment layer</div>
+				<div class="description-item"><span class="number">[5]</span> Liquid crystals</div>
+				<div class="description-item"><span class="number">[6]</span> Color filters</div>
 			</div>
-			<div style="clear:both;"></div>
-
+		</div>
+	</div>
+	
+	<!-- ######################## SLIDE 2.2 ######################## -->
+	<div class="slajd fadein">
+		<h1 id="DzialanieLCD"><i class="fa-solid fa-play"></i> LCD Operating Principles</h1>
+		
+		The principle of creating an image in a color LCD monitor is somewhat different from CRT monitors. The electron gun was eliminated, resulting in a much smaller and lighter monitor. The light source is usually <strong>thin fluorescent lamps</strong> (or <strong>LEDs</strong> in much more expensive LED monitors). The light passes through a <strong>polarizing filter</strong> that allows light waves of a specific phase to pass through. The light beam then hits a filter with horizontal slits, passes through a polysilicon layer called liquid crystals, and hits a second filter with vertical slits.
+		<br /><br />
+		If the light beam is not bent by 90° by the liquid crystal layer, the light will be completely blocked by the second filter. However, if the light beam is bent by 90° by the liquid crystal molecules, the light will be transmitted to the screen. <strong>Liquid crystal molecules are controlled by transistors</strong> - applying voltage causes the particles to orient and bend the light beam by 90° (excitation). Each pixel in an LCD monitor consists of three (called a <strong>triad</strong>) subpixels corresponding to RGB colors. Each subpixel is controlled independently by a separate transistor.
+		<br /><br />
+		
+		<div class="info-box">
+			<div class="info-header">Dead Pixel</div>
+			<div class="info-content">A subpixel that does not change its color or does not excite - e.g., due to a transistor failure - no light beam bending</div>
+		</div>	
+	</div>
+	
+	<!-- ######################## SLIDE 2.3 ######################## -->
+	<div class="slajd fadein">
+		<h1 id="MaskiLCD"><i class="fa-solid fa-th"></i> Matrix Types in LCD Monitors</h1>
+		
+		<strong>Passive matrices</strong> were used in the early days of LCD technology - single transistors controlled entire rows and columns of pixels. Monitors based on passive matrices had slow response times, resulting in smearing and ghosting.
+		<br /><br />
+		In <strong>active matrices</strong>, each subpixel is controlled by a separate thin-film transistor (TFT).
+		<br /><br />
+		
+		<div class="matrix-section">
+			<div class="matrix-title">Twisted Nematic Matrices</div>
+			
+			<div class="matrix-content">
+				<div class="matrix-image">
+					<img src="img/mat1.png" alt="TN Matrix" class="tech-image" />
+				</div>
+				<div class="matrix-description">
+					Applying voltage causes the liquid crystal molecules to rotate to a position perpendicular to the electrode planes on the opposite sides of the screen, blocking the light.
+					<br /><br />
+					They have a short response time (below 8ms), but small viewing angles and poor color reproduction.
+				</div>
+			</div>
 		</div>
 		
-		<!-- ######################## SLAJD 3.2 ######################## -->
+		<br />
 		
-		<div class="slajd">
-		
-			<h1 id="DVI">Digital Connector DVI (Digital Video Interface)</h1>
+		<div class="matrix-section">
+			<div class="matrix-title">Multidomain / Patterned Vertical Alignment</div>
 			
-			A digital standard for transmitting video signals, in DVI-I and DVI-A variants, it also allows for analog signal transmission. The cable connecting the monitor to the computer should not be longer than 5m.
-			<br /><br />
-			
-			<div style="width:790px; background-color:#314004;padding:5px;font-weight:700;color:#fff;">
-				DVI-D
+			<div class="matrix-content">
+				<div class="matrix-image">
+					<img src="img/mat2.png" alt="MVA/PVA Matrix" class="tech-image" />
+				</div>
+				<div class="matrix-description">
+					MVA: Skewed (twisted) alignment of liquid crystal molecules was used, thanks to the use of polyamide solutions. Twisting allows for an identical image from wide viewing angles over 170°).<br /><br />
+					PVA: Technology developed by Samsung as an alternative to MVA (different manufacturing process and parameter values).
+				</div>
 			</div>
-			<div style="width:790px; background-color:#dedede; padding:5px;">
-				True digital image transmitted between the digital output of the graphics card and the digital input of the monitor.
-			</div>		
-			
-			<br />
-			
-			<div style="width:790px; background-color:#314004;padding:5px;font-weight:700;color:#fff;">
-				DVI-A
-			</div>
-			<div style="width:790px; background-color:#dedede; padding:5px;">
-				Used to connect a modern graphics card with a DVI output to a monitor with an analog input.
-			</div>		
-			
-			<br />			
-			
-			<div style="width:790px; background-color:#314004;padding:5px;font-weight:700;color:#fff;">
-				DVI-I
-			</div>
-			<div style="width:790px; background-color:#dedede; padding:5px;">
-				Provides the ability to transmit an analog signal from an analog source to an analog monitor as well as a digital signal from a digital source to a digital monitor.
-			</div>		
-			
-			<br /><br />				
-			
-			<div style="float:left; width:400px; text-align: center;">
-				<img src="img/zlacze2.png" alt="dvi" />
-			</div>
-			<div style="float:left; width:360px; text-align:left; padding-top:10px;">
-				<img src="img/zlacze2a.png" alt="dvi2" />
-			</div>
-			<div style="clear:both;"></div>
-			
-			<br />
-			The difference between Single Link and Dual Link inputs lies in the doubled power, speed, and quality of transmission for Dual Link inputs.
-
 		</div>
 
-		<!-- ######################## SLAJD 3.3 ######################## -->
+		<br />
 		
-		<div class="slajd">
-		
-			<h1 id="HDMI">Modern Digital Connectors HDMI and Display Port</h1>
+		<div class="matrix-section">
+			<div class="matrix-title">(Super) In-Plane Switching</div>
 			
-			<strong>HDMI Connector</strong> (High Definition Multimedia Interface) is a digital standard for transmitting audio/video signals, enabling high-definition (HD) transmission and multi-channel audio. It is used in DVD players, Blu-Ray players, LCD and plasma TVs, and game consoles. Maximum cable length: 15m.
-			<br /><br />			
-			
-			<div style="float:left; width:380px; text-align:right;">
-				<img src="img/zlacze3.png" alt="hdmi" />
+			<div class="matrix-content">
+				<div class="matrix-image">
+					<img src="img/mat3.png" alt="IPS Matrix" class="tech-image" />
+				</div>
+				<div class="matrix-description">
+					In this matrix, the electrodes are placed only on the rear wall, and the liquid crystal molecules are not twisted. When voltage is applied, the light is guided along the shorter edges of the molecules, and the image is visible even at wide angles. In Super I-PS technology, broken electrodes arranged in zigzags were introduced, further reducing color distortions for large viewing angles.
+				</div>
 			</div>
-			<div style="float:left; width:370px; text-align:left; padding-left:50px;">
-				<img src="img/zlacze3a.png" alt="hdmi2" />
-			</div>
-			<div style="clear:both;"></div>
-			
-			<br />
-			
-			<strong>Display Port Connector</strong> - the main goal of the new standard is to connect a computer to a monitor or a computer to a home theater system (including projectors, TVs, etc.). DisplayPort, in its first version 1.0, achieved what HDMI managed to achieve only in version 1.3b: maximum resolution of 2560x1600, 24-bit color depth, maximum signal bandwidth of around 10 Gb/s. The full specification can be achieved with a 15-meter cable; for longer cables, the resolution is reduced to 1920x1080.
-			<br /><br />			
-			
-			<div style="float:left; width:400px; text-align:right;">
-				<img src="img/zlacze4.png" alt="displayport" />
-			</div>
-			<div style="float:left; width:350px; text-align:left; padding-left:10px;">
-				<img src="img/zlacze4a.png" alt="displayport2" />
-			</div>
-			<div style="clear:both;"></div>
-
 		</div>
-
-		<!-- ######################## SLAJD 4.1 ######################## -->
+	</div>
+	
+	<!-- ######################## SLIDE 2.4 ######################## -->
+	<div class="slajd fadein">
+		<h1 id="WadyZaletyLCD"><i class="fa-solid fa-balance-scale"></i> Pros and Cons of LCD Monitors</h1>
 		
-		<div class="slajd">
+		The choice of monitor type depends mainly on its intended use. LCD monitors have almost entirely replaced CRT monitors, but this does not mean they are free of all flaws.
+		<br /><br />
 		
-			<h1 id="Przyszlosc">Future of Monitors and Displays?</h1>
-			
-			Manufacturers are constantly competing to create new technologies that will provide even better image quality and lower production costs. Which technology will dominate the market in the near future? What innovative display construction methods do we know?
-			<br /><br />
-			
-			<div style="width:790px; background-color:#314004;padding:5px;font-weight:700;color:#fff;">
-				PDP (Plasma Display Panel)
+		<div class="pros-cons">
+			<div class="pros">
+				<div class="pros-header">Advantages of LCD Monitors</div>
+				<div class="pros-content">Very good brightness/contrast, excellent image geometry, low power consumption, small size and weight (making adjustment easier), perfectly flat monitor, much lower electromagnetic radiation emission than CRT, refresh rate has little impact on image quality.</div>
 			</div>
-			<div style="width:790px; background-color:#dedede; padding:5px;">
-				In plasma displays, the properties of noble gases are used, which, when excited by high voltage, transition to a state called plasma. This reaction occurs simultaneously in several million pixels across the screen. Each pixel consists of three subpixels for primary colors: RGB (red, green, and blue). A subpixel is a glass tube with xenon, with electrodes at its ends to which high voltage is applied. The potential difference of several hundred volts turns the gas into plasma, causing the emission of UV radiation. Ultraviolet radiation is not visible to humans, so a layer of phosphor is placed, which, when excited by this radiation, emits visible light.
-			</div>		
 			
-			<br />				
-			
-			<div style="width:790px; background-color:#314004;padding:5px;font-weight:700;color:#fff;">
-				OLED (Organic Light-Emitting Diode)
+			<div class="cons">
+				<div class="cons-header">Disadvantages of LCD Monitors</div>
+				<div class="cons-content">Optimal image only at native resolution, average response time, worse color reproduction than CRT, image quality depends on viewing angle.</div>
 			</div>
-			<div style="width:790px; background-color:#dedede; padding:5px;">
-				These are so-called organic light-emitting diodes. The discovery of an organic compound emitting visible light due to the flow of current was made in the laboratory of the University of Cambridge, but the real breakthrough in this technology occurred in 2007. Sony presented a small, flexible display with a diagonal of 2.5 inches and an 11-inch TV with a resolution of 960×540 pixels and a contrast ratio of 1000000:1. It is only 3 mm thick! The receiver weighs about 2 kg and has an HDMI connector. The drawback of OLED displays is the limited lifespan of organic materials. The raw material for producing light-emitting organic diodes is an organic polymer, previously known as a raw material for making films and other plastics. By placing such a conductive polymer between two electrodes with a potential difference, we obtain a current flow and the accompanying light emission.
-			</div>		
-
+		</div>
+	</div>
+	
+	<!-- ######################## SLIDE 2.5 ######################## -->
+	<div class="slajd fadein">
+		<h1 id="ParametryLCD"><i class="fa-solid fa-sliders"></i> Parameter Selection for LCD Monitors</h1>
+		
+		In LCD monitors, the diagonal screen size is exactly as the manufacturer claims, as liquid crystal panels have perfectly flat screens.
+		<br /><br />
+		
+		<div class="info-box">
+			<div class="info-header">Useful Screen Size</div>
+			<div class="info-content">The diagonal size of the monitor screen (expressed in inches)</div>
 		</div>
 		
-		<!-- ######################## SLAJD 4.2 ######################## -->
+		<br />			
+		LCD monitors have a native resolution - they display the optimal image only at one resolution, and other modes are achieved through mathematical scaling, which significantly degrades image quality.
+		<br /><br />
 		
-		<div class="slajd">
-		
-			<h1 id="Zrodla">References</h1>
-			
-			<ul>
-				<li>Computer Technology Devices. Textbook for IT Technician. Helion. Tomasz Kowalski</li>
-				<li>Computer Technology Devices. WSIP. Tomasz Marciniuk</li>
-				<li>http://www.neurosoft.edu.pl/zgomolka/CRT_LCD.pdf</li>
-				<li>Wikipedia.pl</li>
-			</ul>
+		<div class="info-box">
+			<div class="info-header">Resolution</div>
+			<div class="info-content">A parameter that defines the number of pixels in the image displayed on the screen in the current operating mode of the computer monitor; resolution is expressed as the number of image pixels horizontally and vertically</div>
 		</div>
+		
+		<br />
+		Pixel size directly depends on the size of the LCD screen and its native resolution. To calculate the pixel size, measure (or refer to the specifications) the width of the screen's working area and divide it by the horizontal resolution - e.g., a 19-inch monitor typically has a width of 376 mm, and its typical native horizontal resolution is 1280px. So: 376/1280 = 0.294 mm. Differences in pixel size for desktop LCD panels can reach up to 16.5%, but when considering notebook matrices, the differences can reach up to 36%, which is significant.
+		<br /><br />
+		Consider a 17-inch LCD panel with a resolution of 1280x1024 and a monitor one step larger (i.e., 19 inches) with the same native resolution. The larger monitor will naturally have a much larger pixel.
+		<br /><br />
+		
+		<div class="info-box">
+			<div class="info-header">Pixel Size in LCD Monitors</div>
+			<div class="info-content">The distance in [mm] between two pixels in a given LCD matrix.</div>
+		</div>		
+		
+		<br />
+		The brightness of the panel significantly affects the variety of displayed colors and the ability to present image details. An example value: 250 cd/m² (for comparison, the typical brightness of a CRT monitor is about 100-120 cd/m²). Of course, this is the maximum brightness; for example, during office work, too much brightness can quickly tire the eyes.
+		<br /><br />
+		Some monitors have switchable modes that change brightness (and other parameters, such as color balance) so that the displayed content looks its best - for movies or games, a high-brightness profile is created, while for office work, a reduced brightness profile is used.
+		<br /><br />
+		
+		<div class="info-box">
+			<div class="info-header">Image Brightness in LCD Monitors</div>
+			<div class="info-content">The maximum brightness achievable in an LCD matrix, measured in cd/m² (number of candelas per square meter).</div>
+		</div>		
 
+		<br />
+		Let's talk about image contrast. An example value: 1000:1. Theoretically, the higher the contrast ratio, the better the panel's ability to present individual colors. It is worth noting that LCD panels have significant problems displaying black, which can sometimes appear more dark green than black. LCD monitor manufacturers often specify the so-called dynamic contrast in the device's specifications, which can reach up to 1000000:1, unlike the much lower static contrast. However, this is purely a marketing ploy.
+		<br /><br />
+		
+		<div class="info-box">
+			<div class="info-header">Image Contrast in LCD Monitors</div>
+			<div class="info-content">Defines the difference between the brightness of the brightest shade of white and the darkest shade of black achievable on the display.</div>
+		</div>		
+		
+		<br />
+		The trick with dynamic contrast involves adjusting the brightness of the fluorescent lamps providing light depending on the image brightness. The difference in lamp brightness causes an artificial increase in the difference between the brightness of white and black colors. For displaying static images (e.g., slide presentations), dynamic contrast is not very suitable, as noticeable changes in background brightness will occur when changing slides. However, when displaying movies, changes in lamp brightness will not be as visible, and the film will appear more contrasty, although it will still look worse than on a device with higher static contrast. A monitor or TV with dynamic contrast enabled is not suitable for computer work, especially for document or graphics editing.
+	</div>		
+	
+	<!-- ######################## SLIDE 3.1 ######################## -->
+	<div class="slajd fadein" id="connectors-section">
+		<h1 id="DSUB"><i class="fa-solid fa-v"></i> Analog Connector DSUB (VGA)</h1>
+		
+		A popular connector during the CRT monitor era - undesirable in an LCD monitor, as it involves double signal conversion: converting the digital signal to analog in the graphics card and converting the analog signal to digital in the monitor. Double conversion causes image quality loss and increases susceptibility to interference. The name DSUB comes from the type of connectors resembling the shape of a lying letter D. Another name is VGA (from the graphics mode).
+		<br /><br />
+		
+		<div class="connector-images">
+			<div class="connector-image">
+				<img src="img/zlacze1.png" alt="DSUB Connector" class="tech-image" />
+			</div>
+			<div class="connector-image">
+				<img src="img/zlacze1a.png" alt="DSUB Diagram" class="tech-image" />
+			</div>
+		</div>
+	</div>
+	
+	<!-- ######################## SLIDE 3.2 ######################## -->
+	<div class="slajd fadein">
+		<h1 id="DVI"><i class="fa-solid fa-d"></i> Digital Connector DVI (Digital Video Interface)</h1>
+		
+		A digital standard for transmitting video signals, in DVI-I and DVI-A variants, it also allows for analog signal transmission. The cable connecting the monitor to the computer should not be longer than 5m.
+		<br /><br />
+		
+		<div class="info-box">
+			<div class="info-header">DVI-D</div>
+			<div class="info-content">True digital image transmitted between the digital output of the graphics card and the digital input of the monitor.</div>
+		</div>		
+		
+		<br />
+		
+		<div class="info-box">
+			<div class="info-header">DVI-A</div>
+			<div class="info-content">Used to connect a modern graphics card with a DVI output to a monitor with an analog input.</div>
+		</div>		
+		
+		<br />			
+		
+		<div class="info-box">
+			<div class="info-header">DVI-I</div>
+			<div class="info-content">Provides the ability to transmit an analog signal from an analog source to an analog monitor as well as a digital signal from a digital source to a digital monitor.</div>
+		</div>		
+		
+		<br /><br />				
+		
+		<div class="connector-images">
+			<div class="connector-image">
+				<img src="img/zlacze2.png" alt="DVI Connector" class="tech-image" />
+			</div>
+			<div class="connector-image">
+				<img src="img/zlacze2a.png" alt="DVI Diagram" class="tech-image" />
+			</div>
+		</div>
+		
+		<br />
+		The difference between Single Link and Dual Link inputs lies in the doubled power, speed, and quality of transmission for Dual Link inputs.
+	</div>
 
+	<!-- ######################## SLIDE 3.3 ######################## -->
+	<div class="slajd fadein">
+		<h1 id="HDMI"><i class="fa-brands fa-hdmi"></i> Modern Digital Connectors HDMI and Display Port</h1>
+		
+		<strong>HDMI Connector</strong> (High Definition Multimedia Interface) is a digital standard for transmitting audio/video signals, enabling high-definition (HD) transmission and multi-channel audio. It is used in DVD players, Blu-Ray players, LCD and plasma TVs, and game consoles. Maximum cable length: 15m.
+		<br /><br />			
+		
+		<div class="connector-images">
+			<div class="connector-image">
+				<img src="img/zlacze3.png" alt="HDMI Connector" class="tech-image" />
+			</div>
+			<div class="connector-image">
+				<img src="img/zlacze3a.png" alt="HDMI Diagram" class="tech-image" />
+			</div>
+		</div>
+		
+		<br />
+		
+		<strong>Display Port Connector</strong> - the main goal of the new standard is to connect a computer to a monitor or a computer to a home theater system (including projectors, TVs, etc.). DisplayPort, in its first version 1.0, achieved what HDMI managed to achieve only in version 1.3b: maximum resolution of 2560x1600, 24-bit color depth, maximum signal bandwidth of around 10 Gb/s. The full specification can be achieved with a 15-meter cable; for longer cables, the resolution is reduced to 1920x1080.
+		<br /><br />			
+		
+		<div class="connector-images">
+			<div class="connector-image">
+				<img src="img/zlacze4.png" alt="DisplayPort Connector" class="tech-image" />
+			</div>
+			<div class="connector-image">
+				<img src="img/zlacze4a.png" alt="DisplayPort Diagram" class="tech-image" />
+			</div>
+		</div>
+	</div>
 
+	<!-- ######################## SLIDE 4.1 ######################## -->
+	<div class="slajd fadein" id="future-section">
+		<h1 id="Przyszlosc"><i class="fa-solid fa-rocket"></i> Future of Monitors and Displays?</h1>
+		
+		Manufacturers are constantly competing to create new technologies that will provide even better image quality and lower production costs. Which technology will dominate the market in the near future? What innovative display construction methods do we know?
+		<br /><br />
+		
+		<div class="info-box">
+			<div class="info-header">PDP (Plasma Display Panel)</div>
+			<div class="info-content">In plasma displays, the properties of noble gases are used, which, when excited by high voltage, transition to a state called plasma. This reaction occurs simultaneously in several million pixels across the screen. Each pixel consists of three subpixels for primary colors: RGB (red, green, and blue). A subpixel is a glass tube with xenon, with electrodes at its ends to which high voltage is applied. The potential difference of several hundred volts turns the gas into plasma, causing the emission of UV radiation. Ultraviolet radiation is not visible to humans, so a layer of phosphor is placed, which, when excited by this radiation, emits visible light.</div>
+		</div>		
+		
+		<br />				
+		
+		<div class="info-box">
+			<div class="info-header">OLED (Organic Light-Emitting Diode)</div>
+			<div class="info-content">These are so-called organic light-emitting diodes. The discovery of an organic compound emitting visible light due to the flow of current was made in the laboratory of the University of Cambridge, but the real breakthrough in this technology occurred in 2007. Sony presented a small, flexible display with a diagonal of 2.5 inches and an 11-inch TV with a resolution of 960×540 pixels and a contrast ratio of 1000000:1. It is only 3 mm thick! The receiver weighs about 2 kg and has an HDMI connector. The drawback of OLED displays is the limited lifespan of organic materials. The raw material for producing light-emitting organic diodes is an organic polymer, previously known as a raw material for making films and other plastics. By placing such a conductive polymer between two electrodes with a potential difference, we obtain a current flow and the accompanying light emission.</div>
+		</div>		
+	</div>
+	
+	<!-- ######################## SLIDE 4.2 ######################## -->
+	<div class="slajd fadein">
+		<h1 id="Zrodla"><i class="fa-solid fa-book"></i> References</h1>
+		
+		<ul class="references-list">
+			<li><i class="fa-solid fa-graduation-cap"></i> Computer Technology Devices. Textbook for IT Technician. Helion. Tomasz Kowalski</li>
+			<li><i class="fa-solid fa-graduation-cap"></i> Computer Technology Devices. WSIP. Tomasz Marciniuk</li>
+			<li><i class="fa-solid fa-link"></i> http://www.neurosoft.edu.pl/zgomolka/CRT_LCD.pdf</li>
+			<li><i class="fa-solid fa-link"></i> Wikipedia.pl</li>
+		</ul>
+	</div>
 </div>
 
-<div id="footer">Created by impersoftware@gmail.com | Educational Content</div>
+<div id="footer">Created by impersoftware@gmail.com | Educational Content | <span id="year"></span></div>
+
+<script>
+// Dark mode toggle
+const darkToggle = document.getElementById('dark-toggle');
+darkToggle.addEventListener('click', () => {
+	document.body.classList.toggle('dark');
+	// Save preference to localStorage
+	localStorage.setItem('darkMode', document.body.classList.contains('dark'));
+});
+
+// Load dark mode preference
+if (localStorage.getItem('darkMode') === 'true') {
+	document.body.classList.add('dark');
+}
+
+// Set year in footer
+document.getElementById('year').textContent = new Date().getFullYear();
+
+// Enhanced fade-in on scroll with intersection observer
+const observerOptions = {
+	threshold: 0.1,
+	rootMargin: '0px 0px -50px 0px'
+};
+
+const observer = new IntersectionObserver((entries) => {
+	entries.forEach(entry => {
+		if (entry.isIntersecting) {
+			entry.target.classList.add('visible');
+		}
+	});
+}, observerOptions);
+
+document.querySelectorAll('.fadein').forEach(el => {
+	observer.observe(el);
+});
+
+// Smooth scrolling for navigation links
+document.querySelectorAll('#main-nav a, #spis a').forEach(link => {
+	link.addEventListener('click', (e) => {
+		e.preventDefault();
+		const targetId = link.getAttribute('href').substring(1);
+		const targetElement = document.getElementById(targetId);
+		if (targetElement) {
+			targetElement.scrollIntoView({
+				behavior: 'smooth',
+				block: 'start'
+			});
+		}
+	});
+});
+
+// Add hover effects to images
+document.querySelectorAll('.tech-image, .mask-image').forEach(img => {
+	img.addEventListener('mouseenter', function() {
+		this.style.transform = 'scale(1.05)';
+	});
+	img.addEventListener('mouseleave', function() {
+		this.style.transform = 'scale(1)';
+	});
+});
+
+// Add loading animation
+window.addEventListener('load', () => {
+	document.body.classList.add('loaded');
+});
+
+// Add scroll progress indicator
+window.addEventListener('scroll', () => {
+	const scrolled = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+	document.documentElement.style.setProperty('--scroll-progress', scrolled + '%');
+});
+
+// Add keyboard navigation
+document.addEventListener('keydown', (e) => {
+	if (e.key === 'Escape') {
+		// Close any open modals or return to top
+		window.scrollTo({ top: 0, behavior: 'smooth' });
+	}
+});
+
+// Add touch support for mobile
+let touchStartY = 0;
+let touchEndY = 0;
+
+document.addEventListener('touchstart', (e) => {
+	touchStartY = e.changedTouches[0].screenY;
+});
+
+document.addEventListener('touchend', (e) => {
+	touchEndY = e.changedTouches[0].screenY;
+	handleSwipe();
+});
+
+function handleSwipe() {
+	const swipeThreshold = 50;
+	const diff = touchStartY - touchEndY;
+	
+	if (Math.abs(diff) > swipeThreshold) {
+		if (diff > 0) {
+			// Swipe up - could be used for navigation
+			console.log('Swipe up detected');
+		} else {
+			// Swipe down - could be used for navigation
+			console.log('Swipe down detected');
+		}
+	}
+}
+
+// Add performance optimization
+const images = document.querySelectorAll('img');
+const imageObserver = new IntersectionObserver((entries) => {
+	entries.forEach(entry => {
+		if (entry.isIntersecting) {
+			const img = entry.target;
+			img.style.opacity = '1';
+			img.style.transform = 'translateY(0)';
+		}
+	});
+});
+
+images.forEach(img => {
+	img.style.opacity = '0';
+	img.style.transform = 'translateY(20px)';
+	img.style.transition = 'opacity 0.5s, transform 0.5s';
+	imageObserver.observe(img);
+});
+
+// Back to top button functionality
+const backToTopBtn = document.getElementById('backToTop');
+
+// Show/hide button based on scroll position
+window.addEventListener('scroll', () => {
+	if (window.pageYOffset > 300) {
+		backToTopBtn.style.display = 'flex';
+	} else {
+		backToTopBtn.style.display = 'none';
+	}
+});
+
+// Scroll to top when button is clicked
+backToTopBtn.addEventListener('click', () => {
+	window.scrollTo({
+		top: 0,
+		behavior: 'smooth'
+	});
+});
+</script>
 
 </body>
-
-
-
 </html>
