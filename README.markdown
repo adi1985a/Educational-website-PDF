@@ -182,7 +182,7 @@ Made by Adrian Lesniak. For questions or feedback, open an issue on GitHub or em
 
 ---
 
-<div align="center">
+<div align="left">
 
 ### 🎯 **Quick Start**
 ```bash
@@ -197,11 +197,5 @@ python -m http.server 8000
 - ⚡ Smooth Animations
 - 🎨 Modern UI/UX
 - 🔍 SEO Optimized
-
-### 📊 **Technologies Used**
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![jQuery](https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white)
 
 </div>
